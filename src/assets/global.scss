@@ -1,0 +1,84 @@
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 390px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 32px;
+  padding: 25px 0;
+  text-align: center;
+  
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  font-weight: 400;
+  color: $secondary-color;
+}
+
+button {
+  padding: 14px 16px;
+  min-width: 82px;
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+  border-radius: 100px;
+  background-color: #4EADC5;
+  border: none;
+  outline: none;
+  width: 82px;
+  color: #FAFFFD
+}
+
+// Styling errors and success
+.errorTitle {
+  color: $error-primary-color;
+  font-size: 12px;
+}
+.errorInput {
+  border: 1px solid $error-primary-color !important;
+  color: $error-primary-color;
+  opacity: 0.4;
+}
+.errorWrapper {
+  height: 12px;
+  padding: 6px 0;
+}
+.success {
+  color: $success-primary-color
+}
+a {
+  text-decoration: none;
+  color: $secondary-color
+}
+
+.router-link-exact-active {
+  color: $teritary-color
+}
+
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    text-align: left;
+    font-size: 24px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .quickpostMark {
+    display: flex;
+  }
+}
